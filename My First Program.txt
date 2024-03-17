@@ -1,0 +1,87 @@
+print("Welcome to my World!!!")
+
+name=input("what is your name? ")
+print("Nice to meet you "+name)
+
+age=input("what is your age? ")
+print("I am also "+age)
+
+place=input("Where are you from? ")
+print("Ohh nice")
+
+food=input("What do you like for eat? ")
+print("That's also mine favourite") 
+
+
+def add(x, y):
+  return x + y 
+def sub(x, y):
+  return x - y
+def multi(x, y):
+  return x * y  
+def dive(x, y):
+  return x / y
+
+
+calculate=input("Do you like to do calculation(yes/no)? ")
+while True:
+
+  if calculate=='yes':
+    print("let's do calculation")
+
+  else:
+    print("Ohh nice i also don't like it")
+    break
+  
+  print("Select a operation:")
+  print("1).Addition")
+  print("2).Subtraction")
+  print("3).Multiplication")
+  print("4).Division")
+
+
+  Choice=input("Select a operation(1/2/3/4): ")
+
+  if Choice in ('1','2','3','4'):
+    num1=float(input("Enter first number: "))
+    num2=float(input("Enter second number: "))
+    if Choice == '1':
+      print(num1, "+", num2, "=", add(num1, num2))
+    elif Choice == '2':
+      print(num1, "-", num2, "=", sub(num1, num2))
+    elif Choice == '3':
+      print(num1, "*", num2, "=", multi(num1, num2))
+    elif Choice == '4':
+      print(num1, "/", num2, "=", dive(num1, num2))
+    
+    again = input("Do you want to do again(yes/no)? ")
+    if again == 'no':
+      print("Ok!!!")
+      break  
+  else:
+    print("invalid input!!!")
+
+
+OddEven=input("Do you like Odd and Even(yes/no)? ")
+while True:
+  
+  if OddEven=='yes':
+    print("Amazing let's do it!!!")
+  
+  else:
+    print("It's amazing i also don't like it.") 
+    break
+  
+  for i in range(1):
+   num=int(input("Enter a number: "))
+  
+   if (num % 2)==1:
+     print("odd")
+ 
+   else:
+    print("even")
+  
+  again = input("Do you want to do again(yes/no)? ")
+  if again == 'no':
+    print("ok!!!")
+    break  
